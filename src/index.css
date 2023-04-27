@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 55px;
+}
+
+h6{
+  font-size: 25px;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.App:before {
+  content: "";
+  background: url("./style/clouds.png") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 800px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.App .desc{
+  position: relative;
+}
+
+.App .search{
+  text-align: center;
+  padding: 1rem;
+}
+
+.App input{
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(26, 90, 101, 0.2);
+  background: rgba(26, 90, 101, 0.2);
+}
+
+::placeholder{
+  color: white;
+}
+
+.App .bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(26, 90, 101, 0.2);
+}
+
+.bold {
+  font-weight: 500;
+}
