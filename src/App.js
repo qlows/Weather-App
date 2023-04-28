@@ -5,20 +5,31 @@ import "weather-icons/css/weather-icons.min.css";
 function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
+  const [error, setError] = useState("");
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=5318ceaec2de791db1af8b804883bc91`;
+  const apiKey = "5318ceaec2de791db1af8b804883bc91";
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric`;
 
-  const searchLocation = (event) => {
+  const searchLocation = async (event) => {
     if (event.key === "Enter") {
-      axios.get(url).then((res) => {
-        setData(res.data);
-      });
+      try {
+        const response = await axios.get(`${apiUrl}&q=${location}`);
+        setData(response.data);
+        setError("");
+      } catch (error) {
+        setError("Location not found");
+      }
       setLocation("");
     }
   };
 
   return (
     <div className="App">
+      {error ? (
+        <div className="alert alert-danger" role="alert">
+          {error}
+        </div>
+      ) : null}
       <div className="search">
         <input
           value={location}
