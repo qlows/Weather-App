@@ -1,290 +1,178 @@
-/*  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+     sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+     monospace;
+ }
 
-p {
-  font-size: 45px;
-}
+ p {
+   font-size: 45px;
+ }
 
-h2 {
-  font-size: 55px;
-}
+ h2 {
+   font-size: 55px;
+ }
 
-h6{
-  font-size: 25px;
-}
+ h6 {
+   font-size: 25px;
+ }
 
-.App {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
+ html {
+   height: 0%;
+ }
 
-.App:before {
-  content: "";
-  background: url("./style/clouds.png") no-repeat center center/cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
+ .App {
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background-color: #d7e1ec;
+ }
 
-.container {
-  max-width: 800px;
-  height: 700px;
-  margin: auto;
-  padding: 0 1rem;
-  position: relative;
-  top: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+ .container {
+   max-width: 800px;
+   height: 700px;
+   margin: auto;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: white;
+   border-radius: 12px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+ }
 
-.App .top {
-  width: 100%;
-  margin: 1rem auto;
-}
 
-.App .desc{
-  position: relative;
-}
+ .App .top {
+   width: 100%;
+   margin: 1rem auto;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+ }
 
-.App .search{
-  text-align: center;
-  padding: 1rem;
-}
+ .App .desc {
+   position: relative;
+   text-align: center;
+   font-size: 3rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+ }
 
-.App input{
-  padding: .7rem 1.5rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  border: 1px solid rgba(26, 90, 101, 0.2);
-  background: rgba(26, 90, 101, 0.2);
-}
+ .App .search {
+   text-align: center;
+   padding: 4rem;
+ }
 
-::placeholder{
-  color: white;
-}
+ .App input {
+   padding: 0.7rem 1.5rem;
+   font-size: 1.2rem;
+   border-radius: 25px;
+   border: none;
+   background-color: #f1f3f5;
+   width: 100%;
+   max-width: 400px;
+   margin: 0 auto;
+ }
 
-.App .bottom{
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  width: 100%;
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: rgba(26, 90, 101, 0.2);
-}
+ ::placeholder {
+   color: #adb5bd;
+ }
 
-.bold {
-  font-weight: 500;
-}
+ .App .bottom {
+   display: flex;
+   justify-content: space-evenly;
+   text-align: center;
+   width: 100%;
+   margin: 1rem auto;
+   padding: 1rem;
+   border-radius: 12px;
+   background-color: #f1f3f5;
+ }
 
- */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ .bold {
+   font-weight: 500;
+   font-size: 1.2rem;
+   margin-top: 0.5rem;
+ }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+ .App .bottom>div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+ .App .bottom>div>h6 {
+   margin-bottom: 0.5rem;
+ }
 
-body {
+ .App .container {
+   background-color: rgba(255, 255, 255, 0.8);
+   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+ }
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ .App .top>p {
+   font-size: 3rem;
+   font-weight: 500;
+   margin-bottom: 1rem;
+ }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ .App .temp {
+   text-align: center;
+   font-size: 6rem;
+   font-weight: 500;
+   margin-top: 1rem;
+ }
 
-p {
-  font-size: 45px;
-}
+ .App .desc {
+   position: relative;
+   text-align: center;
+   font-size: 2rem;
+   margin-top: 1rem;
+ }
 
-h2 {
-  font-size: 55px;
-}
+ .App .desc>i {
+   font-size: 4rem;
+   position: absolute;
+   top: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+ }
 
-h6 {
-  font-size: 25px;
-}
+ .App .humidity,
+ .App .wind,
+ .App .feel {
+   margin-top: 1rem;
+ }
 
-.App {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: #d7e1ec;
-}
+ @media only screen and (max-width: 600px) {
+   .App .temp {
+     font-size: 4rem;
+   }
 
-.container {
-  max-width: 800px;
-  height: 700px;
-  margin: auto;
-  padding: 1rem;
-  position: relative;
-  top: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
+   .App .desc {
+     font-size: 1.5rem;
+   }
 
-.App .top {
-  width: 100%;
-  margin: 1rem auto;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-}
+   .App .desc>i {
+     font-size: 3rem;
+   }
 
-.App .desc {
-  position: relative;
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.App .search {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-.App input {
-  padding: .7rem 1.5rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  border: none;
-  background-color: #f1f3f5;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-::placeholder {
-  color: #adb5bd;
-}
-
-.App .bottom {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  width: 100%;
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: #f1f3f5;
-}
-
-.bold {
-  font-weight: 500;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
-
-.App .bottom>div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.App .bottom>div>h6 {
-  margin-bottom: 0.5rem;
-}
-
-.App .container {
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-}
-
-.App .top {
-  text-align: center;
-}
-
-.App .top>p {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.App .temp {
-  text-align: center;
-  font-size: 6rem;
-  font-weight: 500;
-}
-
-.App .desc {
-  position: relative;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 1rem;
-}
-
-.App .desc>i {
-  font-size: 4rem;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.App .humidity,
-.App .wind,
-.App .feel {
-  margin-top: 1rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .App .temp {
-    font-size: 4rem;
-  }
-
-  .App .desc {
-    font-size: 1.5rem;
-  }
-
-  .App .desc>i {
-    font-size: 3rem;
-  }
-
-  .bold {
-    font-size: 1rem;
-  }
-}
+   .bold {
+     font-size: 1rem;
+   }
+ }
