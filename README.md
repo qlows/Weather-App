@@ -5,7 +5,7 @@ Weather app using API, Postman, React, and axios.
 Here you can get the weather of the location entered.
 
 Weather of Toronto
-![localhost toronto](https://github.com/qlows/full_stack/blob/main/Lab%20Test%202/101232721_comp2123_labtest2/Screenshots/localhost.png)
+![localhost toronto](https://github.com/qlows/Weather-App/blob/main/Screenshots/localhost.png)
 
 Lisbon
 ![postman lisbon](https://github.com/qlows/full_stack/blob/main/Lab%20Test%202/101232721_comp2123_labtest2/Screenshots/postman.png)
